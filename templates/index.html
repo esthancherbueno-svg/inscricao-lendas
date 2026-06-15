@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneio de Lendas do Vôlei</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Fredoka:wght@400;500;600;700&display=swap');
+
+        body {
+            background-color: #FFD700;
+            background-image: url('https://i.ibb.co/gb2B4KRP/logo-do-serv.gif');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Fredoka', 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: linear-gradient(145deg, rgba(250, 250, 250, 0), rgba(0, 0, 0, 0));
+            padding: 48px;
+            border-radius: 18px;
+            box-shadow: 0 12px 26px rgba(0, 0, 0, 0.25);
+            max-width: 600px;
+            width: 100%;
+            border-top: 8px solid #006400;
+            backdrop-filter: blur(2px);
+        }
+        h1 {
+            color: #006400;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            font-family: 'Baloo 2', 'Fredoka', sans-serif;
+            font-size: 2rem;
+            text-shadow: 2px 2px 0 #fff6a0;
+        }
+        p.subtitle {
+            text-align: center;
+            color: #5a4b00;
+            margin-bottom: 30px;
+            font-style: normal;
+            font-weight: 600;
+            text-shadow: 1px 1px 0 #fff;
+        }
+        .player-section {
+            background: linear-gradient(135deg, #fffef5, #fff3b0);
+            border-left: 6px solid #2bff00;
+            padding: 18px;
+            margin-bottom: 22px;
+            border-radius: 10px;
+            box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
+        }
+        .player-section h3 {
+            margin-top: 0;
+            color: #333;
+            font-size: 1.1em;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 700;
+            color: #444;
+            font-size: 0.95rem;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #040a01;
+            border-radius: 10px;
+            box-sizing: border-box;
+            font-size: 14px;
+            background-color: #fffef8;
+            font-family: 'Fredoka', 'Segoe UI', sans-serif;
+        }
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #006400;
+            box-shadow: 0 0 5px rgba(0, 100, 0, 0.3);
+        }
+        button {
+            background: linear-gradient(135deg, #006400, #2e8b57);
+            color: #fff9c4;
+            border: none;
+            padding: 15px 20px;
+            width: 100%;
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 10px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-family: 'Baloo 2', 'Fredoka', sans-serif;
+            box-shadow: 0 6px 0 #004d00;
+            transition: transform 0.1s ease, background 0.2s ease;
+        }
+        button:hover {
+            background: linear-gradient(135deg, #004d00, #1f6f3b);
+            transform: translateY(-1px);
+        }
+        button:hover {
+            background-color: #004d00;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div style="text-align:center; margin-bottom: 12px;">
+            <img src="https://i.ibb.co/h18X6D6w/logo-volei.png" alt="logo volei" border="0">
+        </div>
+        <p class="subtitle">Formulário de Inscrição </p>
+
+        <form action="/" method="POST">
+            
+            <label for="nome_equipe">Nome da Equipe</label>
+            <input type="text" id="nome_equipe" name="nome_equipe" placeholder="" required>
+
+            <div class="player-section">
+                <h3>Jogador 1 (Capitão)</h3>
+                <label>Nick do Discord</label>
+                <input type="text" name="p1_nick" placeholder="" required>
+                
+                <label>ID do Discord</label>
+                <input type="text" name="p1_id" placeholder="" required>
+            </div>
+
+            <div class="player-section">
+                <h3>Jogador 2</h3>
+                <label>Nick do Discord</label>
+                <input type="text" name="p2_nick" placeholder="" required>
+                
+                <label>ID do Discord</label>
+                <input type="text" name="p2_id" placeholder="" required>
+            </div>
+
+            <div class="player-section">
+                <h3>Jogador 3</h3>
+                <label>Nick do Discord</label>
+                <input type="text" name="p3_nick" placeholder="" required>
+                
+                <label>ID do Discord</label>
+                <input type="text" name="p3_id" placeholder="" required>
+            </div>
+
+            <button type="submit">Inscrever Equipe</button>
+        </form>
+    </div>
+
+</body>
+</html>
